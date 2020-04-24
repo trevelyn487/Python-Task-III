@@ -18,7 +18,7 @@ def easy():
     guesses_made = 1
     
     print('''\nYou've selected Easy. 
-For this level, you're to guess a number between 1 and 10. 
+For this level, you're to guess a number from 1 to 10. 
 You have 6 guesses in total.''')
    
     while guesses_made <= 6:
@@ -43,7 +43,7 @@ def medium():
     guesses_made = 1
     
     print('''\nYou've selected Medium. 
-For this level, you're to guess a number between 1 and 20. 
+For this level, you're to guess a number from 1 to 20. 
 You have 4 guesses in total.''')
     
     while guesses_made <= 4:
@@ -68,7 +68,7 @@ def hard():
     guesses_made = 1
     
     print('''\nYou've selected Hard. 
-For this level, you're to guess a number between 1 and 50. 
+For this level, you're to guess a number from 1 to 50. 
 You have 3 guesses in total.''')
     
     while guesses_made <= 3:
