@@ -16,13 +16,13 @@ def guess_validation(instructions):
 def easy():
     number = random.randint(1, 10)
     guesses_made = 1
-    
     print('''\nYou've selected Easy. 
-For this level, you're to guess a number from 1 to 10. 
+A certain secret number lies between 1 and 10.
+For this level, you're to guess this secret number while limiting your guesses from 1 to 10. 
 You have 6 guesses in total.''')
    
     while guesses_made <= 6:
-        guess = guess_validation("\nMake a Guess: ") 
+        guess = guess_validation("\nMake a Guess: ")
         if guess == number:
             print("You got it right!")
             break
@@ -35,15 +35,15 @@ You have ''' + str(guesses_left) + ''' guess(es) left.''')
               
     else:
         print('''
-Game over! The correct number was ''' + str(number) + ".")
+Game over! The secret number was ''' + str(number) + ".")
         
     
 def medium():
     number = random.randint(1, 20)
     guesses_made = 1
-    
     print('''\nYou've selected Medium. 
-For this level, you're to guess a number from 1 to 20. 
+A certain secret number lies between 1 and 20.
+For this level, you're to guess this secret number while limiting your guesses from 1 to 20. 
 You have 4 guesses in total.''')
     
     while guesses_made <= 4:
@@ -60,15 +60,15 @@ You have ''' + str(guesses_left) + ''' guess(es) left.''')
               
     else:
         print('''
-Game over! The correct number was ''' + str(number) + ".")
+Game over! The secret number was ''' + str(number) + ".")
         
 
 def hard():
     number = random.randint(1, 50)
     guesses_made = 1
-    
     print('''\nYou've selected Hard. 
-For this level, you're to guess a number from 1 to 50. 
+A certain secret number lies between 1 and 50.
+For this level, you're to guess this secret number while limiting your guesses from 1 to 50. 
 You have 3 guesses in total.''')
     
     while guesses_made <= 3:
@@ -85,15 +85,14 @@ You have ''' + str(guesses_left) + ''' guess(es) left.''')
               
     else:
         print('''
-Game over! The correct number was ''' + str(number) + ".")
+Game over! The secret number was ''' + str(number) + ".")
         
     
 play = True
 while True:
     level = True
-    
     level = input('''
-Welcome to my Number Guessing Game! 
+Welcome to my Guessing Game! 
 This game has 3 levels - "Easy", "Medium" and "Hard". 
 Select a level to start: ''').lower()
     
@@ -110,7 +109,7 @@ Select a level to start: ''').lower()
             hard()
             break 
         
-        #Ensuring user selects level correctly.
+        #Ensuring user enters level correctly.
         else:
             if level != "easy" or "medium" or "hard":
                 level = input("Invalid selection. Please select an appropriate level: ")
