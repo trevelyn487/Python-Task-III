@@ -22,7 +22,7 @@ For this level, you're to guess a number from 1 to 10.
 You have 6 guesses in total.''')
    
     while guesses_made <= 6:
-        guess = guess_validation("\nMake a Guess: ")
+        guess = guess_validation("\nMake a Guess: ") 
         if guess == number:
             print("You got it right!")
             break
