@@ -7,7 +7,7 @@ def guess_validation(instructions):
         try:
             entry = int(input(instructions))
         except ValueError:
-            print("Entry error! Please enter an integer.")
+            print("Entry error! Number guessed must be an integer.")
         else:
             return entry
             break
