@@ -92,7 +92,7 @@ play = True
 while True:
     level = True
     level = input('''
-Welcome to my Guessing Game! 
+Welcome to my Number Guessing Game! 
 This game has 3 levels - "Easy", "Medium" and "Hard". 
 Select a level to start: ''').lower()
     
